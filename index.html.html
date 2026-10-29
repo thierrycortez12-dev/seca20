@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Desafio Seca 20 | Seque em 20 dias por R$ 39,90</title>
+<meta name="description" content="Plano de 20 dias com treino em casa e alimentação simples para quem tem rotina corrida. Acesso imediato por R$ 39,90.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0B0B0F;--bg2:#15151C;--line:#2A2A35;--text:#F6F6F8;--mute:#B3B3C0;--pink:#FF2D75;--orange:#FF6A3D;--grad:linear-gradient(90deg,#FF2D75,#FF6A3D);--ok:#3DDC97;--no:#FF5C5C;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font:400 17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:84px}
+h1,h2,h3{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;line-height:1.05;margin:0 0 .5em;letter-spacing:.01em;text-transform:uppercase}
+h1{font-size:clamp(2.4rem,9vw,4.4rem)}
+h2{font-size:clamp(1.9rem,6.5vw,3rem)}
+h3{font-size:1.4rem}
+p{margin:0 0 1em}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+.alt{background:var(--bg2)}
+.pink{color:var(--pink)}
+.center{text-align:center}
+.mute{color:var(--mute)}
+.bar{background:var(--grad);color:#fff;text-align:center;font-weight:700;font-size:.92rem;padding:10px 14px;padding-top:calc(10px + env(safe-area-inset-top,0px))}
+.bar b{font-variant-numeric:tabular-nums}
+.cta{display:block;width:100%;max-width:520px;margin:24px auto 0;background:var(--grad);color:#fff;text-decoration:none;text-align:center;font-weight:700;font-size:1.05rem;line-height:1.25;padding:20px 22px;border-radius:16px;box-shadow:0 0 0 0 rgba(255,45,117,.6),0 10px 30px rgba(255,45,117,.35);animation:pulse 2.2s infinite}
+.cta:focus-visible,summary:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,45,117,.55),0 10px 30px rgba(255,45,117,.35)}70%{box-shadow:0 0 0 16px rgba(255,45,117,0),0 10px 30px rgba(255,45,117,.35)}100%{box-shadow:0 0 0 0 rgba(255,45,117,0),0 10px 30px rgba(255,45,117,.35)}}
+.micro{font-size:.85rem;color:var(--mute);text-align:center;margin-top:12px}
+.hero{padding:44px 0 56px;background:radial-gradient(120% 60% at 50% 0%,rgba(255,45,117,.22),transparent 60%)}
+.hero .sub{font-size:1.15rem;color:var(--mute);max-width:620px}
+.ticks{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.ticks li{padding-left:34px;position:relative;font-weight:500}
+.ticks li::before{content:"✓";position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:var(--grad);color:#fff;font-size:.85rem;font-weight:700;display:grid;place-items:center;line-height:1}
+.pains{list-style:none;padding:0;margin:20px 0;display:grid;gap:10px}
+.pains li{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:14px 16px 14px 48px;position:relative}
+.pains li::before{content:"✕";position:absolute;left:16px;top:14px;color:var(--pink);font-weight:700}
+.quote{font-size:1.2rem;font-weight:700;border-left:4px solid var(--pink);padding-left:16px;margin-top:26px}
+.pillars{display:grid;gap:14px;margin-top:24px}
+.pillar{border:1px solid var(--line);border-radius:18px;padding:22px;background:var(--bg2)}
+.pillar .ic{font-size:1.8rem}
+.pillar h3{color:var(--pink);margin:.3em 0 .3em}
+.pillar p{margin:0;color:var(--mute)}
+.big{font-family:Anton,Impact,sans-serif;font-size:clamp(1.5rem,5.5vw,2.2rem);text-align:center;text-transform:uppercase;margin:34px 0 0;line-height:1.15}
+.tl{list-style:none;margin:28px 0 0;padding:0 0 0 26px;border-left:3px solid var(--pink);display:grid;gap:22px}
+.tl li{position:relative}
+.tl li::before{content:"";position:absolute;left:-35px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--orange);border:3px solid var(--bg2)}
+.tl .d{font-family:Anton,Impact,sans-serif;font-size:1.25rem;text-transform:uppercase;color:var(--orange)}
+.tl strong{display:block;font-size:1.1rem}
+.tl span{color:var(--mute)}
+.stack{list-style:none;padding:0;margin:22px 0;display:grid;gap:10px}
+.stack li{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:var(--bg2);border:1px solid var(--line);border-radius:14px}
+.stack li::before{content:"✓";flex:none;width:24px;height:24px;border-radius:50%;background:var(--grad);display:grid;place-items:center;font-size:.85rem;font-weight:700;line-height:1;margin-top:2px}
+.price{margin:26px auto 0;max-width:520px;text-align:center;border:2px solid var(--pink);border-radius:24px;padding:28px 20px;background:linear-gradient(180deg,rgba(255,45,117,.14),rgba(255,106,61,.05))}
+.price .old{color:var(--mute);text-decoration:line-through;font-size:1.05rem;min-height:1.6em}
+.price .now{font-family:Anton,Impact,sans-serif;font-size:clamp(3.4rem,16vw,5rem);line-height:1;color:#fff}
+.price .now small{font-size:.4em;margin-right:6px}
+.price .note{color:var(--mute);font-size:.95rem;margin:8px 0 0}
+.cols{display:grid;gap:14px;margin-top:22px}
+.col{border-radius:18px;padding:22px;border:1px solid var(--line);background:var(--bg2)}
+.col h3{margin-bottom:.6em}
+.col.yes h3{color:var(--ok)}.col.no h3{color:var(--no)}
+.col ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.col li{padding-left:28px;position:relative}
+.col.yes li::before{content:"✔";position:absolute;left:0;color:var(--ok)}
+.col.no li::before{content:"✖";position:absolute;left:0;color:var(--no)}
+.seal{width:150px;height:150px;border-radius:50%;margin:0 auto 22px;background:var(--grad);display:grid;place-items:center;text-align:center;font-family:Anton,Impact,sans-serif;text-transform:uppercase;line-height:1;box-shadow:0 0 0 6px var(--bg),0 0 0 8px var(--orange)}
+.seal b{display:block;font-size:3.2rem;font-weight:400}.seal span{font-size:1.05rem}
+details{border:1px solid var(--line);border-radius:14px;background:var(--bg2);margin-bottom:10px}
+summary{cursor:pointer;padding:16px 48px 16px 18px;font-weight:700;list-style:none;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:18px;top:12px;font-size:1.5rem;color:var(--pink);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 18px;margin:0 0 16px;color:var(--mute)}
+footer{padding:36px 0 20px;font-size:.82rem;color:var(--mute);text-align:center;border-top:1px solid var(--line)}
+footer a{color:var(--mute)}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(11,11,15,.94);border-top:1px solid var(--line)}
+.sticky .cta{margin:0 auto;padding:15px 18px;animation:none}
+@media (min-width:760px){.pillars{grid-template-columns:repeat(3,1fr)}.cols{grid-template-columns:1fr 1fr}.sticky{display:none}body{padding-bottom:0}}
+@media (prefers-reduced-motion:reduce){.cta{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="bar">🔥 Oferta de lançamento: R$ 39,90 por mais <b id="t1">--:--:--</b></div>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Seque a barriga em 20 dias <span class="pink">sem passar fome</span> e sem viver na academia</h1>
+    <p class="sub">O Desafio Seca 20 é um plano passo a passo de treino em casa e alimentação simples, feito para a mulher de rotina corrida que quer ver o corpo mudando.</p>
+    <ul class="ticks">
+      <li>Treinos curtos para fazer em casa</li>
+      <li>Cardápio simples e barato</li>
+      <li>Um passo por dia, do dia 1 ao dia 20</li>
+    </ul>
+    <a class="cta" href="#" data-cta>Quero entrar no Desafio Seca 20 por R$ 39,90</a>
+    <p class="micro">Acesso imediato · Pagamento seguro</p>
+  </div>
+</header>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Você se reconhece nisso?</h2>
+    <ul class="pains">
+      <li>Começa a dieta e larga na segunda semana.</li>
+      <li>Evita o espelho e foge de foto.</li>
+      <li>Compra roupa um número maior para se esconder.</li>
+      <li>Sente que o corpo mudou depois dos filhos e da correria.</li>
+      <li>Já gastou dinheiro com coisa que não funcionou.</li>
+      <li>Falta tempo, energia e motivação.</li>
+    </ul>
+    <p class="quote">A culpa não é sua. Faltava um plano simples, curto e possível de seguir. Por isso criamos o Seca 20.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="center">Conheça o Desafio <span class="pink">Seca 20</span></h2>
+    <p class="center mute">Três coisas que trabalham juntas para você não desistir no meio do caminho.</p>
+    <div class="pillars">
+      <div class="pillar"><div class="ic">💪</div><h3>Treino</h3><p>Treinos diários e curtos, para fazer em casa, no seu horário.</p></div>
+      <div class="pillar"><div class="ic">🥗</div><h3>Alimentação</h3><p>Cardápio simples, lista de compras e trocas fáceis para caber no seu bolso.</p></div>
+      <div class="pillar"><div class="ic">✅</div><h3>Constância</h3><p>Checklist diário para você acompanhar cada dia dos 20 e manter o ritmo.</p></div>
+    </div>
+    <p class="big">20 dias. Um passo por dia.<br><span class="pink">Um corpo novo para chamar de seu.</span></p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Como funcionam os 20 dias</h2>
+    <ol class="tl">
+      <li><div class="d">Dias 1 a 5</div><strong>Desinchar e começar</strong><span>Você cria o ritmo e tira o corpo da inércia.</span></li>
+      <li><div class="d">Dias 6 a 10</div><strong>Acelerar</strong><span>A rotina já está encaixada e o treino ganha intensidade.</span></li>
+      <li><div class="d">Dias 11 a 15</div><strong>Queimar</strong><span>Foco total em gastar energia e manter a disciplina.</span></li>
+      <li><div class="d">Dias 16 a 20</div><strong>Finalizar com força</strong><span>Você chega ao fim orgulhosa de ter cumprido o que prometeu.</span></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>O que você recebe</h2>
+    <ul class="stack">
+      <li><span><b>Desafio Seca 20 completo:</b> 20 dias de treino em casa.</span></li>
+      <li><span><b>Guia alimentar e cardápio</b> simples para o dia a dia.</span></li>
+      <li><span><b>Lista de compras e receitas rápidas.</b></span></li>
+      <li><span><b>Checklist diário</b> para acompanhar sua evolução.</span></li>
+    </ul>
+    <div class="price">
+      <div class="old" id="old"></div>
+      <div class="now"><small>R$</small>39,90</div>
+      <p class="note">Pagamento único · Acesso imediato</p>
+    </div>
+    <a class="cta" href="#" data-cta>Quero entrar no Desafio Seca 20</a>
+    <p class="micro">Compra segura · Acesso imediato</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Para quem é (e para quem não é)</h2>
+    <div class="cols">
+      <div class="col yes"><h3>É para você se</h3><ul>
+        <li>Tem rotina corrida e pouco tempo.</li>
+        <li>Quer treinar em casa, sem equipamento caro.</li>
+        <li>Já tentou dietas e quer algo simples de seguir.</li>
+        <li>Está começando agora.</li></ul></div>
+      <div class="col no"><h3>Não é para você se</h3><ul>
+        <li>Quer milagre sem nenhum esforço.</li>
+        <li>Não pretende seguir o plano por 20 dias.</li>
+        <li>Procura tratamento médico ou nutricional individual.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap center">
+    <h2>Daqui a 20 dias você vai querer ter começado hoje</h2>
+    <div class="price">
+      <div class="old" id="old2"></div>
+      <div class="now"><small>R$</small>39,90</div>
+      <p class="note">Oferta de lançamento termina em <b id="t2">--:--:--</b></p>
+    </div>
+    <a class="cta" href="#" data-cta>Quero entrar no Desafio Seca 20 por R$ 39,90</a>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Preciso ir à academia?</summary><p>Não. Os treinos foram pensados para fazer em casa.</p></details>
+    <details><summary>Funciona para iniciantes?</summary><p>Sim. O plano começa leve e vai aumentando aos poucos.</p></details>
+    <details><summary>Quanto tempo por dia eu preciso?</summary><p>Os treinos são curtos, para caber mesmo em rotina corrida.</p></details>
+    <details><summary>Como recebo o acesso?</summary><p>Logo após a confirmação do pagamento, você recebe o acesso por e-mail.</p></details>
+    <details><summary>E se eu não conseguir seguir todos os dias?</summary><p>Sem drama. Retome de onde parou. O checklist ajuda você a voltar ao ritmo.</p></details>
+    <details><summary>Tenho alguma restrição de saúde. Posso fazer?</summary><p>Converse com um médico ou nutricionista antes de começar qualquer atividade física ou mudança alimentar.</p></details>
+    <a class="cta" href="#" data-cta>Começar o Desafio Seca 20 agora</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Este programa não substitui acompanhamento médico ou nutricional. Consulte um profissional antes de iniciar qualquer atividade física ou mudança alimentar. Os resultados variam de pessoa para pessoa.</p>
+    <p><a href="#">Termos de uso</a> · <a href="#">Política de privacidade</a></p>
+    <p>© Desafio Seca 20. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<div class="sticky"><a class="cta" href="#" data-cta>Quero o Seca 20 por R$ 39,90</a></div>
+
+<script>
+// ====== CONFIGURE AQUI ======
+var CHECKOUT = "#";      // cole o link do checkout
+var FULL_PRICE = "";     // ex.: "97,00" (deixe vazio para esconder o preço riscado)
+var HOURS = 24;          // duração da oferta para cada visitante
+// ============================
+document.querySelectorAll("[data-cta]").forEach(function(a){a.href=CHECKOUT});
+if(FULL_PRICE){["old","old2"].forEach(function(id){document.getElementById(id).textContent="De R$ "+FULL_PRICE})}
+var end;
+try{end=parseInt(sessionStorage.getItem("seca20_end"),10)}catch(e){}
+if(!end||end<Date.now()){end=Date.now()+HOURS*3600*1000;try{sessionStorage.setItem("seca20_end",String(end))}catch(e){}}
+function p(n){return n<10?"0"+n:""+n}
+function tick(){var s=Math.max(0,Math.floor((end-Date.now())/1000));var t=p(Math.floor(s/3600))+":"+p(Math.floor(s%3600/60))+":"+p(s%60);["t1","t2"].forEach(function(id){document.getElementById(id).textContent=t})}
+tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
